@@ -8,7 +8,7 @@
 
 #### Kullanıcı İşlemleri
 
-```http
+```bash
   POST /api/v1/auth
 ```
 
@@ -18,7 +18,7 @@
 
 #### Todo'ları Listeleme
 
-```http
+```bash
   GET /api/v1/todos?user_id={id}
 ```
 
@@ -29,7 +29,7 @@
 
 #### Todo Ekleme
 
-```http
+```bash
   POST /api/v1/add
 ```
 
@@ -40,7 +40,7 @@
 
 #### Todo Güncelleme
 
-```http
+```bash
   PATCH /api/v1/update/{id}
 ```
 
@@ -53,7 +53,7 @@
 
   #### Todo Silme
 
-```http
+```bash
   DELETE /api/v1/delete/{id}
 ```
 
