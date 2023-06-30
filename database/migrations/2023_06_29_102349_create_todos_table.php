@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer("user_id");
             $table->text("action");
-            $table->integer("status")->default(0);
+            $table->char("status")->default("0");
             $table->timestamps();
         });
     }
