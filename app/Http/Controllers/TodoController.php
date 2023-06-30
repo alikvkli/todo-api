@@ -41,7 +41,7 @@ class TodoController extends Controller
             'reason' => 'success',
             'reasonCode' => 1,
             'message' => 'İşlem başarıyla gerçekleştirildi.',
-            'payload' => Todo::get()
+            'payload' => Todo::where("user_id", $request->query('user_id'))->get()
         ];
         return Response($response, 200);
     }
